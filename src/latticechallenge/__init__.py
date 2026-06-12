@@ -3,7 +3,8 @@
 __version__ = "1.0.0"
 __author__ = "Mr Quadr"
 
-from .download_latticechallenge import ExportData
+from .download_data import ExportData
+from .handler_data import HandlerData
 
 
-__all__ = ["ExportData"]
+__all__ = ["ExportData", "HandlerData"]
