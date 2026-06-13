@@ -36,7 +36,7 @@ class HandlerData:
     }
 
     def __init__(self, workspace: str|Path = None):
-        if self.workspace is None:
+        if workspace is None:
             self.workspace = Path(__file__).parents[0] / "data"
         else:
             self.workspace = Path(workspace) if isinstance(workspace, str) else workspace
