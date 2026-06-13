@@ -9,7 +9,8 @@ authors = [
 requires-python = ">=3.14"
 dependencies = [
     "pathlib",
-    "requests"
+    "requests",
+    "sympy"
 ]
 
 [project.scripts]

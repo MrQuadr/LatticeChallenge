@@ -27,8 +27,12 @@ class ExportData:
         }
     }
 
-    def __init__(self, workspace: str|Path, proxies: list = None):
-        self.workspace = (Path(workspace) if isinstance(workspace, str) else workspace) / "data"
+    def __init__(self, workspace: str|Path = None, proxies: list = None):
+        if self.workspace is None:
+            self.workspace = Path(__file__).parents[0] / "data"
+        else:
+            self.workspace = Path(workspace) if isinstance(workspace, str) else workspace
+
         for key in self.info_challenge_data.keys():
             folder = self.workspace / key
             folder.mkdir(parents=True, exist_ok=True)

@@ -35,8 +35,11 @@ class HandlerData:
         }
     }
 
-    def __init__(self, workspace: str = None):
-        self.workspace = (Path(workspace) if isinstance(workspace, str) else workspace) / "data"
+    def __init__(self, workspace: str|Path = None):
+        if self.workspace is None:
+            self.workspace = Path(__file__).parents[0] / "data"
+        else:
+            self.workspace = Path(workspace) if isinstance(workspace, str) else workspace
         if not self.workspace.is_dir():
             raise f"Folder {self.workspace} not found ..."
         self.temp = self.workspace / "temp"
