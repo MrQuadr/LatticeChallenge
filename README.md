@@ -2,12 +2,12 @@
 
 ## Содержание
 
-- [Lattice Challenge](#Lattice-Challenge)
-- [SVP Challenge](#SVP-Challenge)
-- [Ideal Lattice Challenge](#Ideal-Lattice-Challenge)
-- [LWE Challenge](#LWE-Challenge)
+- [Lattice Challenge](#Lattice-Challenge) ([site](https://www.latticechallenge.org/))
+- [SVP Challenge](#SVP-Challenge) ([site](https://www.latticechallenge.org/svp-challenge/index.php))
+- [Ideal Lattice Challenge](#Ideal-Lattice-Challenge) ([site](https://www.latticechallenge.org/ideallattice-challenge/index.php))
+- [LWE Challenge](#LWE-Challenge) ([site](https://www.latticechallenge.org/lwe_challenge/challenge.php))
 
-## [Lattice Challenge](https://www.latticechallenge.org/)
+## Lattice Challenge
 
 ### Описание
 
@@ -32,7 +32,7 @@ line #4-end:	Challenge lattice basis                 решетка
 "challenge-" + размерность решетки + ".bz2"
 ```
 
-## [SVP Challenge](https://www.latticechallenge.org/svp-challenge/index.php)
+## SVP Challenge
 
 ### Описание
 
@@ -52,7 +52,7 @@ line #1-end:	Challenge lattice basis                 решетка
 "svpchallengedim" + размерность решетки + "seed" + зерно генератора + ".txt"
 ```
 
-## [Ideal Lattice Challenge](https://www.latticechallenge.org/ideallattice-challenge/index.php)
+## Ideal Lattice Challenge
 
 ### Описание
 
@@ -84,7 +84,7 @@ line #m+2:		Coefficients of the cyclotomic polynomial       коэффициен
 - ideallatticedim546.zip
 - ideallatticedim928.zip
 
-## [LWE Challenge](https://www.latticechallenge.org/lwe_challenge/challenge.php)
+## LWE Challenge
 
 ### Описание
 
